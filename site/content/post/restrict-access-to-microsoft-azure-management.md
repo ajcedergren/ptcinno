@@ -1,7 +1,9 @@
 ---
 title: Restrict Access to Microsoft Azure Management
 date: 2019-05-30T22:37:29.497Z
-description: Restrict Azure Management Portal Access to restrict Non-Admin Users.
+description: >-
+  [I-AAD0001] Restrict Azure Management Portal Access to restrict Non-Admin
+  Users.
 ---
 ```
 Finding ID: I-AAD0001

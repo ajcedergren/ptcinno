@@ -1,9 +1,9 @@
 ---
-title: Restrict Azure Management Portal Access
+title: Restrict access to Azure AD administration portal
 date: 2019-05-30T22:46:37.867Z
-description: >
-  [I-AAD0001] Restrict Azure Management Portal Access to restrict Non-Admin
-  Users.
+description: >-
+  [I-AAD0001] Restrict access to Azure AD administration portal to prevent
+  Non-Admin Users from access.
 ---
 ```
 Finding ID: I-AAD0001Risk: CAT IIISource: Azure Active DirectoryDescription: Access to Azure AD Administration Portal is not restricted.

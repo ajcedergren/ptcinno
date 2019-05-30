@@ -1,5 +1,5 @@
 ---
-title: Restrict Access to Microsoft Azure Management
+title: oldRestrict Access to Microsoft Azure Management
 date: 2019-05-30T14:04:10.000Z
 description: Restrict Azure Management Portal Access to restrict Non-Admin Users.
 image: ''

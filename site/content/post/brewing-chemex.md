@@ -1,26 +1,62 @@
 ---
-title: A beginners’ guide to brewing with Chemex
-date: 2017-01-04T15:04:10.000Z
-description: >-
-  Brewing with a Chemex probably seems like a complicated, time-consuming
-  ordeal, but once you get used to the process, it becomes a soothing ritual
-  that's worth the effort every time.
-image: /img/blog-chemex.jpg
+title: Restrict Access to Microsoft Azure Management
+date: 2019-05-30T14:04:10.000Z
+description: ______________________________________________________
+image: ''
 ---
+```
+Finding ID: I-AAD0001Risk: CAT IIISource: Azure Active DirectoryDescription: Access to Azure AD Administration Portal is not restricted.
+```
 
-This [week](/wdwdw) we’ll **take** a look at all the steps required to make astonishing coffee with a Chemex at home. The Chemex Coffeemaker is a manual, pour-over style glass-container coffeemaker that Peter Schlumbohm invented in 1941, and which continues to be manufactured by the Chemex Corporation in Chicopee, Massachusetts\*.
+## Background
 
-In 1958, designers at the [Illinois Institute of Technology](https://www.spacefarm.digital) said that the Chemex Coffeemaker is *"one of the best-designed products of modern times"*, and so is included in the collection of the Museum of Modern Art in New York City.
+The default option of “No” pertaining to the **Restrict access to Azure AD administration portal** setting “lets a non-administrator use this Azure AD administration portal experience to access Azure AD resources that the user has permission to read, or manage resources they own.”
 
-## The little secrets of Chemex brewing
+## Protect
 
-The Chemex Coffeemaker consists of an hourglass-shaped glass flask with a conical funnel-like neck (rather than the cylindrical neck of an Erlenmeyer flask) and uses proprietary filters, made of bonded paper (thicker-gauge paper than the standard paper filters for a drip-method coffeemaker) that removes most of the coffee oils, brewing coffee with a taste that is different than coffee brewed in other coffee-making systems; also, the thicker paper of the Chemex coffee filters may assist in removing cafestol, a cholesterol-containing compound found in coffee oils. Here’s three important tips newbies forget about:
+Selecting the Option “Yes” pertaining to the Restrict access to Azure AD administration portal setting “restricts all non-administrators from accessing any Azure AD data in the administration portal.”
 
-1. Always buy dedicated Chemex filters.
-2. Use a scale, don’t try to eyeball it.
-3. Never skip preheating the glass.
-4. Timing is key, don’t forget the clock.
+* This setting does not restrict such access using PowerShell or another client such as Visual Studio.
 
-The most visually distinctive feature of the Chemex is the heatproof wooden collar around the neck, allowing it to be handled and poured when full of hot water. This is turned, then split in two to allow it to fit around the glass neck. The two pieces are held loosely in place by a tied leather thong. The pieces are not tied tightly and can still move slightly, retained by the shape of the conical glass.
+1. Login to Azure Tenant with an account that has Global Administrator rights within the Azure tenant.
+2. Within the Azure Tenant, navigate to Azure Active Directory blade and select Users, then select User Settings.
 
-For a design piece that became popular post-war at a time of Modernism and precision manufacture, this juxtaposition of natural wood and the organic nature of a hand-tied knot with the laboratory nature of glassware was a distinctive feature of its appearance.
+![Azure Active Directory Tenant – User Properties – Restrict access to Azure AD administration portal.](/img/azure-inno-ad-01_001.png "Azure Active Directory Tenant – User Properties – Restrict access to Azure AD administration portal.")
+
+1. In the User Settings options, locate Administration portal section, under this heading Select the Yes for the Restrict access to Azure AD administration portal setting.
+
+![Azure Active Directory Tenant – User Properties – Restrict access to Azure AD administration portal.](/img/azure-inno-ad-01_002.png "Azure Active Directory Tenant – User Properties – Restrict access to Azure AD administration portal.")
+
+
+
+## Exposure
+
+Administrative Portal access can be access by any “standard” or “non-admin” account. Described below are example access methods Pre and Post Protection.
+
+* Non-Admin accessing Azure Management Portal exposes User and Directory data.
+* Example: identifying through account naming conventions Administrative accounts.
+* `Azure Portal URL : portal.azure.com`
+
+![Azure Management Portal accessed by Standard User Account without Portal Access Restriction enabled.](/img/azure-inno-ad-03.png "Azure Management Portal accessed by Standard User Account without Portal Access Restriction enabled.")
+
+* Once Portal Access Restriction is enabled, Non-Admin accessing Azure Management Portal is presented “Access Denied”
+
+![Azure Management Portal accessed by Standard User Account with Portal Access Restriction enabled.](/img/azure-inno-ad-04.png "Azure Management Portal accessed by Standard User Account with Portal Access Restriction enabled.")
+
+Portal Access Control Restriction does not prevent access to Azure AD information in other methods. The below examples step through what a Non-Admin user can still query to AAD.
+
+
+
+Refer to Microsoft Azure Management Conditional Access Controls, for Background, Protect and Exposure (BPE) for methods of protection.
+
+```
+Method: PowershellModule: AzureADConnect-AzureAD $CredentialsGet-AzureADUser | select DisplayName
+```
+
+```
+Method: PowershellModule: Azaz loginGet-AzADUser | select DisplayName
+```
+
+```
+Method: PowershellModule: MsolConnect-MsolService $CredentialsGet-MsolUser | select DisplayName
+```

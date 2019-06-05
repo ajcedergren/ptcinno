@@ -1,5 +1,5 @@
 ---
-title: Directory Security
+title: Paighton is the Best!
 subtitle: Frameworks and Common Controls.
 image: /img/home-jumbotron.jpg
 blurb:

@@ -1,6 +1,6 @@
 ---
-title: Paighton is the Best!
-subtitle: Frameworks and Common Controls.
+title: Paighton loves Walking Dead!
+subtitle: .
 image: /img/home-jumbotron.jpg
 blurb:
   heading: Why Common Controls?

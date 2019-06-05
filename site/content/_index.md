@@ -1,6 +1,6 @@
 ---
 title: Directory Security
-subtitle: Information Security  Common Controls.
+subtitle: Frameworks and Common Controls.
 image: /img/home-jumbotron.jpg
 blurb:
   heading: Why Common Controls?

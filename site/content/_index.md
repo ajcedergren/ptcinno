@@ -5,8 +5,8 @@ image: /img/home-jumbotron.jpg
 blurb:
   heading: Why Common Controls?
   text: >
-    Open knowledge security and common controls resource for securing Enterprise
-    IT, Modern Organizations and Workspaces for Information Technology.
+    Open knowledge security and common controls for Information Security within
+    Enterprise, Modern Organization and IT Workspaces.
 intro:
   heading: What we offer
   text: Hybrid IT Directory and Information Security.

@@ -1,6 +1,6 @@
 ---
 title: Directory Security
-subtitle: On-Premise and Hybrid Instance Common Controls.
+subtitle: Information Security  Common Controls.
 image: /img/home-jumbotron.jpg
 blurb:
   heading: Why Common Controls?

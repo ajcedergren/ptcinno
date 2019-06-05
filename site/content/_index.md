@@ -1,6 +1,6 @@
 ---
-title: Paighton loves Walking Dead!
-subtitle: .
+title: Hybrid Directory Security
+subtitle: Framework and Policy Common Controls.
 image: /img/home-jumbotron.jpg
 blurb:
   heading: Why Common Controls?

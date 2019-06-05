@@ -12,11 +12,11 @@ intro:
   text: Hybrid IT Directory and Information Security.
 products:
   - image: img/illustrations-coffee.svg
-    text: Architecture
+    text: Architecture Framework
   - image: /img/illustrations-coffee-gear.svg
-    text: Policy
+    text: Policy Framework
   - image: /img/illustrations-tutorials.svg
-    text: Controls
+    text: Controls Framework
 values:
   heading: Our values
   text: >-

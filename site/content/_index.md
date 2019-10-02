@@ -1,22 +1,25 @@
 ---
-title: Hybrid Directory Security
-subtitle: Framework and Policy Common Controls.
+title: Hybrid IT Security Services
+subtitle: Modern security approach for your business needs.
 image: /img/home-jumbotron.jpg
 blurb:
-  heading: Why Common Controls?
+  heading: Why Standardized IT Security Auditing and Common Controls?
   text: >
-    Open knowledge security and common controls for Information Security within
-    Enterprise, Modern Organization and IT Workspaces.
+    Understand  your IT Environment's Cyber Security stance. We provide 
+    Information Technology security, consulting and common controls within
+    Enterprise, Modern Organizations and IT Work spaces.
 intro:
   heading: What we offer
-  text: Hybrid IT Directory and Information Security.
+  text: >-
+    Modern IT Information Security Consulting built upon foundation of
+    experience and standardized compliance models.
 products:
-  - image: img/illustrations-coffee.svg
-    text: Architecture Framework
-  - image: /img/illustrations-coffee-gear.svg
-    text: Policy Framework
-  - image: /img/illustrations-tutorials.svg
-    text: Controls Framework
+  - image: /img/ptcinnofisacoreauditsecurityitpeachtreecity.svg
+    text: IT Environment and Security Audit
+  - image: /img/ptcinnofisacorearchitectsecurityitpeachtreecity.svg
+    text: IT Architecture and Consulting
+  - image: /img/ptcinnofisacorecybersecuritysecurityitpeachtreecity.svg
+    text: IT Security and Common Controls Framework
 values:
   heading: Our values
   text: >-
